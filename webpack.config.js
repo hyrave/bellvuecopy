@@ -9,6 +9,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 }
 */
 
+const postCSSPlugins = [
+  require('postcss-import')
+]
+
+let cssConfig = {
+  test: /\.css$/i,
+  use: ['css-loader?url=false',{loader: 'postcss-loader',options: {plugins: postCSSPlugins}}]
+}
+
 let pages = fse.readdirSync('./app').filter(function(file) {
   return file.endsWith('.html')
 }).map(function(page) {
@@ -24,7 +33,7 @@ let config = {
   plugins: pages, 
   module: {
       rules: [
-          //cssConfig,
+          cssConfig,
           {
               test: /\.js$/,
               exclude: /(node_modules)/

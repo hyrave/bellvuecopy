@@ -1,0 +1,27 @@
+.header-disclaimer {
+  position: absolute;
+  top:0;
+  z-index:5;  
+  width:100%;  
+  background-color:#CCC;    
+  opacity:0.8;
+  
+  & .content {
+    position:relative;
+    margin:0 auto;
+    white-space: nowrap;
+    width:80%;   
+    font-family:"Raleway", Raleway, sans-serif;
+    font-size:1rem;
+    text-align:center;    
+    overflow:hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  & .content span {
+    line-height:35px;
+    margin:10px 0 0 0;
+    font-weight:100;
+  }
+}

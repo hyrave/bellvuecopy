@@ -3,14 +3,14 @@
   top:0;
   margin:0;
   
-  ul { 
+  & ul { 
     list-style-type: none;
     padding:0;
     margin:0;
 
   } 
 
-  ul li img {
+  & .image-container img {
     width:100%;    
   }
 

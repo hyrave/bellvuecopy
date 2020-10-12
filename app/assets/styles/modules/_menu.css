@@ -1,4 +1,17 @@
 .menu {
-  position:absolute;
-  top:0;
+  position:relative;
+  top:4rem;
+  z-index:2;
+  color:#FFF;
+  display:flex;
+  justify-content: flex-end;
+
+  & ul {    
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:65%;
+  }
+  
 }

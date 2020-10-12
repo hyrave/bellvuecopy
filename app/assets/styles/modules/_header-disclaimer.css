@@ -1,25 +1,24 @@
 .header-disclaimer {
   position: absolute;
-  top:0;
-  z-index:5;  
+  top:0;  
   width:100%;  
   background-color:#FFF;    
-  opacity:0.8;
+  opacity:0.7;
   
   & .content {
     position:relative;
     margin:0 auto;    
-    width:87%;   
-    font-family:"Raleway", Raleway, sans-serif;
-    font-size:0.9rem;
+    width:87%;       
+    font-size:1rem;
+    font-stretch: condensed;
     text-align:center;
     display:flex;    
-    line-height:35px;
-    font-weight:400;
+    line-height:36px;
+    font-weight:600;
+    color:#333;
 
-    @mixin atSmall {
-      font-size:1rem;
-      
+    @mixin atMedium {
+      font-size:0.9rem;    
     }
   }
 

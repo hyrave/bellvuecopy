@@ -5,7 +5,10 @@
 @import 'modules/_site-header';
 @import 'modules/_header-disclaimer';
 @import 'modules/_mainlogo';
+@import 'modules/_smallogo';
 @import 'modules/_menu';
 @import 'modules/_header-logos';
 @import 'modules/_image-container';
+@import 'modules/_banner';
+@import 'modules/_welcomepage';
 

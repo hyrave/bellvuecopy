@@ -1,3 +1,4 @@
 .welcomepage {
-  position:relative; 
+  position:static; 
+  z-index:15;
 }

@@ -1,4 +1,43 @@
 .welcomepage {
-  position:static; 
-  z-index:15;
+  position:relative;
+  text-align:center;
+  width:95%;
+  margin:0 auto;
+
+  & .welcomemsg {    
+    background-image:url('../assets/images/bellevue-logo-transparent.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    padding:20px;
+  }
+
+  & hr {
+    margin-top:-10px;
+    width:200px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-bottom: 0.2rem solid $mainBlue;
+  }
+
+  & p {
+    width:70%;
+    margin:20px auto;
+    line-height:1.5rem;
+    font-weight:100;
+
+  }
+
+  & h3 {
+    font-size:1.69rem;
+  }
+
+  & h1 {
+    font-size:2.5rem;
+    font-family:'Cormorant', serif;
+    color:$mainBlue;
+    font-weight:normal;
+    letter-spacing: 0.2rem;
+    
+  }
 }

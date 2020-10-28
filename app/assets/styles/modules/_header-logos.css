@@ -8,7 +8,7 @@
     cursor: pointer;
     height:15px;
     width:15px;
-    margin: 0 2px;
+    margin: 0 5px;
     background-color: #BBB;
     border-radius: 50%;
     display:inline-block;
@@ -16,12 +16,16 @@
   }
 
   & .active, .dot:hover {
-    background-color: #717171;
+    background-color: $mainBlue;
   }
   & .thedots {
+    display:none;
     text-align:center;
     position:relative;
     top:-1.7rem;
 
+    @mixin atMedium {
+      display:block;
+    }
   }
 }

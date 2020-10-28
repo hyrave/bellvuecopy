@@ -3,7 +3,7 @@
 @import 'base/_keyframes';
 @import 'base/_mixins';
 @import 'base/_global';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import 'base/_font';
 @import 'modules/_site-header';
 @import 'modules/_header-disclaimer';
 @import 'modules/_mainlogo';
@@ -14,4 +14,5 @@
 @import 'modules/_banner';
 @import 'modules/_welcomepage';
 @import 'modules/_slideshow-container';
+@import 'modules/_btn';
 

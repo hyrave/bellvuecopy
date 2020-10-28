@@ -16,7 +16,7 @@
     width:auto;
     padding:1.23rem;
     margin-top: -1.69rem;
-    color:#FFF;
+    color:rgba(255,255,255,0.1);
     font-weight:bold;
     font-size: 0.85rem;
     transition: 0.6s ease;
@@ -24,7 +24,7 @@
     user-select:none;
 
     @mixin atMedium {
-      font-size:1.38rem;
+      font-size:2rem;
     }
   }
 
@@ -34,12 +34,11 @@
   }
 
   & .prev:hover, & .next:hover {
-    background-color: #f1f1f1;
-    color:#000;
+    color:#FFF;
   }
 
   & .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
 }

@@ -1,0 +1,9 @@
+.promotions {
+  position:relative;
+  margin:10px auto 30px;
+  text-align:center;
+
+  @mixin atLarge {
+    margin-bottom:60px;
+  }
+}

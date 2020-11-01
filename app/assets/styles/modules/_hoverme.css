@@ -1,0 +1,18 @@
+.hoverme {
+  opacity:0;
+  transition: opacity .5s;        
+  background-color: rgba($mainBlue,0.3);
+  height:350px;
+  margin:0 auto;
+  text-align:center;
+
+  @mixin atLarge {
+    height:500px;
+  }
+
+  &:hover {  
+    zoom: 1;    
+    filter:alpha(opacity=50);
+    opacity:1;    
+  }
+}

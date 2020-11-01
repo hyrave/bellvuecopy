@@ -1,6 +1,11 @@
 .smalllogo {  
   position:relative;
-  left:-50%;
+  left:-30px;
   background-color:#FFF;
   border-radius:10rem;
+  width:150px;  
+
+  @mixin atMedium {
+    left:0;
+  }
 }

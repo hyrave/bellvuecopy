@@ -5,9 +5,9 @@ class HeaderSlideShow {
       this.prev = document.querySelector(".prev")
       this.next = document.querySelector(".next")
       this.slideIndex = 1           
-      this.showSlides(this.slideIndex);
+      this.showSlides(this.slideIndex)
       this.events()
-      
+      this.updateSlide()
     }
 
   events () {
@@ -15,6 +15,10 @@ class HeaderSlideShow {
     )
     this.prev.addEventListener('click', () => this.plusSlides(this.slideIndex-1))
     this.next.addEventListener('click', () => this.plusSlides(this.slideIndex+1))    
+  }
+
+  updateSlide() {
+    setInterval(() => this.plusSlides(this.slideIndex+1),10000);
   }
   
   plusSlides(n) {

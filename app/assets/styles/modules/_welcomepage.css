@@ -2,13 +2,17 @@
   position:relative;
   text-align:center;
   width:95%;
-  margin:0 auto;
+  margin:0 auto 40px;  
 
   & .welcomemsg {    
     background-image:url('../assets/images/bellevue-logo-transparent.png');
     background-repeat:no-repeat;
     background-position: center;
-    padding:20px;
+    padding:20px 20px 5px;
+
+    @mixin atLarge {
+      padding: 20px;
+    }
   }
 
   & hr {
@@ -20,12 +24,19 @@
     border-bottom: 0.2rem solid $mainBlue;
   }
 
-  & p {
-    width:70%;
+  & p {    
+    width:100%;
     margin:20px auto;
-    line-height:1.5rem;
-    font-weight:100;
-
+    line-height:1.1rem;
+    font-weight:500;
+    font-size:.8rem;
+    color:#333;
+    
+    @mixin atLarge {
+      width:70%;
+      line-height:1.5rem;      
+      font-size:.9rem;
+    }
   }
 
   & h3 {
@@ -33,11 +44,16 @@
   }
 
   & h1 {
-    font-size:2.5rem;
+    font-size:1.6rem;
     font-family:'Cormorant', serif;
     color:$mainBlue;
-    font-weight:normal;
-    letter-spacing: 0.2rem;
+    font-weight:normal;    
+    letter-spacing: 0.3rem;
+
+    @mixin atLarge {
+      font-size:2.5rem;
+      letter-spacing: 0.2rem;
+    }
     
   }
 }

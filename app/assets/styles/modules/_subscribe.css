@@ -1,0 +1,17 @@
+.subscribe {
+  transform:translateY(20%);  
+  margin: 0 auto;
+  text-align: center;
+  padding:20px;
+
+  & p {
+    font-size:0.75rem;
+    width:80%;    
+    font-style:italic;
+    margin:20px auto;
+  }
+  & input {
+    padding:5px;
+    font-size:0.7rem;
+  }
+}

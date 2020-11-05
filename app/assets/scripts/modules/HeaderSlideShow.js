@@ -1,14 +1,14 @@
 class HeaderSlideShow {
   constructor() {
       this.dots = document.querySelectorAll('.dot')
-      this.slides = document.querySelectorAll(".mySlides");
+      this.slides = document.querySelectorAll(".mySlides")
       this.prev = document.querySelector(".prev")
       this.next = document.querySelector(".next")
       this.slideIndex = 1           
       this.showSlides(this.slideIndex)
       this.events()
       this.updateSlide()
-    }
+  }
 
   events () {
     this.dots.forEach(box => box.addEventListener('click', () => this.currentSlide(box))
@@ -23,19 +23,19 @@ class HeaderSlideShow {
   
   plusSlides(n) {
     this.showSlides(this.slideIndex = n);
-    console.log("index:",this.slideIndex);
+    //console.log("index:",this.slideIndex);
   }
 
   currentSlide(n) {    
     this.showSlides(this.slideIndex = parseInt(n.getAttribute("value")));
-    console.log("index:",this.slideIndex);
+    //console.log("index:",this.slideIndex);
   }
 
   showSlides(n) {
     var i;        
     if (n > this.slides.length) {this.slideIndex = 1}    
     if (n < 1) {this.slideIndex = this.slides.length}
-    console.log("n:"+n+" thislider:"+this.slideIndex);
+    //console.log("n:"+n+" thislider:"+this.slideIndex);
     for (i = 0; i < this.slides.length; i++) {
       this.slides[i].style.display = "none";  
     }

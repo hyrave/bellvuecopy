@@ -1,0 +1,73 @@
+.calendar {
+  position:absolute;
+  z-index:3;  
+  top:30%;
+  left:7%;
+  background-color:#FFF;
+  width:300px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.8);
+
+  &__header {
+    background-color:$mainBlue;
+    color:#FFF;
+    padding:0.6rem 1rem;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  &__main {
+    margin:0 auto;
+    text-align:center;    
+  }
+
+  &__main p {
+    font-weight:bold;
+    color:$mainBlue;
+  }
+
+  &__input {
+    border:1px solid #777;
+    width:90%;
+    margin:0 auto 12px;
+    padding:.7rem;
+    display:flex;
+  }
+
+  &__input span {
+    color:#888;    
+    width:35%;
+    text-align:left;
+  }
+
+  &__input input {
+    border:0;
+    width:120px;
+  }
+
+  &__input input:focus {
+    outline:none;
+  }
+
+  &__input .promo {
+    border:none;
+    width:150px;
+  }
+
+  &__button {
+    background-color:#ffff00;
+    background-image: linear-gradient(#FF0,#9c8503);
+    color:#000;
+    margin-bottom:10px;
+    width:90%;
+    font-size:0.9rem;
+  }
+
+  & button {
+    display: block;
+    width: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+}

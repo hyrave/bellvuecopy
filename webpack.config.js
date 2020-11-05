@@ -3,7 +3,8 @@ const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const fse = require('fs-extra')
+const fse = require('fs-extra');
+const webpack = require('webpack');
 
 const postCSSPlugins = [
     require('postcss-import'),
@@ -35,11 +36,28 @@ let pages = fse.readdirSync('./app').filter(function(file) {
         template: `./app/${page}`
     })
 })
-
+console.log("pages:",pages)
 let config = {
     entry: './app/assets/scripts/App.js',
-    /*plugins: [new HtmlWebpackPlugin({filename: 'index.html',template: './app/index.html'})],*/
-    plugins: pages, 
+    /*plugins: [
+        new HtmlWebpackPlugin({filename: 'index.html',template: './app/index.html'}),        
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery'",
+            "window.$": "jquery"
+        })
+    ],*/
+    plugins: pages.concat(
+        [
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                "window.jQuery": "jquery'",
+                "window.$": "jquery"
+            })
+        ]
+    ),
     module: {
         rules: [
             cssConfig,
